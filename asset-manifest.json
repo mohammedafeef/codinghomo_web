@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/codinghomo_web/static/css/main.62ec72ed.chunk.css",
+    "main.js": "/codinghomo_web/static/js/main.4775c02e.chunk.js",
+    "main.js.map": "/codinghomo_web/static/js/main.4775c02e.chunk.js.map",
+    "runtime-main.js": "/codinghomo_web/static/js/runtime-main.664e44bc.js",
+    "runtime-main.js.map": "/codinghomo_web/static/js/runtime-main.664e44bc.js.map",
+    "static/js/2.bd6766f3.chunk.js": "/codinghomo_web/static/js/2.bd6766f3.chunk.js",
+    "static/js/2.bd6766f3.chunk.js.map": "/codinghomo_web/static/js/2.bd6766f3.chunk.js.map",
+    "index.html": "/codinghomo_web/index.html",
+    "static/css/main.62ec72ed.chunk.css.map": "/codinghomo_web/static/css/main.62ec72ed.chunk.css.map",
+    "static/js/2.bd6766f3.chunk.js.LICENSE.txt": "/codinghomo_web/static/js/2.bd6766f3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.664e44bc.js",
+    "static/js/2.bd6766f3.chunk.js",
+    "static/css/main.62ec72ed.chunk.css",
+    "static/js/main.4775c02e.chunk.js"
+  ]
+}
