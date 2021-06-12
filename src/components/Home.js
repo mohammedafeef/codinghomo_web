@@ -23,7 +23,7 @@ function Home() {
 const Container = styled.div`
     width:100%;
     min-height:100%;
-    background:url('./public/assets/bg.jpg') center/cover no-repeat scroll;
+    background:url('./assets/bg.jpg') center/cover no-repeat scroll;
     justify-content:center;
     align-item:center;
     flex:1;
