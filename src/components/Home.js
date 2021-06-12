@@ -6,11 +6,13 @@ function Home() {
         <Container id="home">
             <Content>
                 <h1>
-                    <span>Passion</span><br/>
+                    {/* <span>Passion</span><br/>
                     beats <br/>
-                    <span>Impossible</span>
+                    <span>Impossible</span> */}
+                    Hi,<br/>
+                    <span>i am bobby</span><br/>
                 </h1>
-                <button>explore</button>
+                <a href="#projects">explore</a>
             </Content>
             <ProfileImage>
 
@@ -21,10 +23,12 @@ function Home() {
 const Container = styled.div`
     width:100%;
     min-height:100%;
+    background:url('http://www.pngmagic.com/product_images/blue-background-images-for-websites.jpg') center/cover no-repeat scroll;
     justify-content:center;
     align-item:center;
     flex:1;
     padding:2rem;
+    padding-left:calc(5% + 2rem);
     overflow: hidden;
 `
 const Content = styled.div`
@@ -34,16 +38,21 @@ const Content = styled.div`
     align-items:left;
     height:100%;
     h1{
+        color:var(--primary-bg-clr);
         font-size:5rem;
-        font-family:sans;
-        margin-bottom:2.5rem;
+        font-family:var(--secondary-fnt);
+        margin:13rem 0 3.5rem;
         text-transform:capitalize;
+        text-shadow:0px 4px 3px rgba(0,0,0,.4),
+                    0px 8px 13px rgba(0,0,0,.1),
+                    0px 18px 23px rgba(0,0,0,.1);
         position:relative;
         span{
             font-size:6rem;
             letter-spacing:.4rem;
             font-weight:600;
             text-transform:uppercase;
+            margin-bottom:2.5rem;
         }
         :after{
             content:'';
@@ -56,23 +65,27 @@ const Content = styled.div`
             transform:rotate(45deg);
         }
     }
-    button{
+    a{
+        text-decoration:none;
+        text-align:center;
         outline:none;
-        max-width:10rem;
-        background-color:var(--primary-bg-clr);
-        box-shadow:3px 3px 0 0 var(--primary-fg-clr);
-        border-radius:8px;
-        border:1px solid var(--primary-fg-clr);
+        max-width:12rem;
+        margin-top:1rem;
+        background-image:linear-gradient(to right,#0b77bd,#00a3e4);
+        ${'' /* background-color:var(--primary-bg-clr); */}
+        color:var(--primary-bg-clr);
+        box-shadow:0 20px 40px rgba(0,0,0,.21);
+        ${'' /* border-radius:8px; */}
+        ${'' /* border:1px solid var(--primary-fg-clr); */}
         font-size:2rem;
         text-transform:capitalize;
-        font-weight:500;
+        font-weight:900;
         font-family:var(--primary-fnt);
         padding:.6rem 1rem;
         transition:.3s;
         :hover{
-            background-color:var(--secondary-bg-clr);
-            color:var(--secondary-fg-clr);
-            transform:translate(2px,2px);
+            box-shadow:0 45px 60px rgba(0,0,0,.16);
+            transform:translate(1px,1px);
         }
         :focus{
             outline:none;
@@ -82,6 +95,7 @@ const Content = styled.div`
         transform:translateY(-50px);
         h1{
             font-size:4rem;
+            margin-top:30rem;
             span{
                 font-size:5rem
             }

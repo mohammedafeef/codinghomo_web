@@ -24,11 +24,39 @@ const Container = styled.div`
     padding:3rem 10rem;
     background-color:var(--primary-bg-clr);
     color:var(--primary-fg-clr);
+    position:relative;
+    ::before{
+        content:'';
+        z-index:0;
+        height:60rem;
+        width:60rem;
+        position:absolute;
+        left:-35rem;
+        top:-6rem;
+        border-radius:50%;
+        animation:2s infinite alternate bouncing;
+        box-shadow:0 8px 20px rgba(0,0,0,.18);
+        background-image:linear-gradient(to right,#0b77bd,#00a3e4);
+    }
+    @keyframes bouncing{
+        from{
+            transform:translateY(0px);
+        }
+        to{
+            transform:translateY(-6px);
+        }
+    }
+    @media screen and (max-width:600px){
+        ::before{
+            left:-45rem;
+        }
+    }
 `
 const getIcon = ({color})=>`
     &&{
+        z-index:1;
         font-size:4rem;
-        color:#000;
+        color:var(--primary-fg-clr);
         transition:.5s ease-in-out;
         :hover{
             transform:translateY(-5px);

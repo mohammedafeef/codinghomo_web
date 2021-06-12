@@ -17,6 +17,7 @@ function Project({tittle,content,imageUrl}) {
 }
 const Container = styled.div`
     display:flex;
+    z-index:1;
     justify-content:center;
     padding:2rem 6rem;
     flex-direction:row-reverse;
