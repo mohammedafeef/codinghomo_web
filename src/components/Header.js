@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import MenuIcon from '@material-ui/icons/Menu';
-import WbSunnyIcon from '@material-ui/icons/WbSunny';
+// import WbSunnyIcon from '@material-ui/icons/WbSunny';
 
 function Header() {
     const [menuState,setMenu] = useState(false);
-    const [theme,setTheme] = useState({
-        fgclr:'black',
-        bgclr:'white'
-    })
+    // const [theme,setTheme] = useState({
+    //     fgclr:'black',
+    //     bgclr:'white'
+    // })
     const setState = ()=>menuState?setMenu(false):setMenu(true);
-    const changeTheme = async () =>{
-        const rootOfDoc = document.documentElement.style
-        rootOfDoc.setProperty("--secondary-fg-clr",`${theme.fgclr}`);
-        rootOfDoc.setProperty("--secondary-bg-clr",`${theme.bgclr}`);
-        await theme.bgclr == 'white'?setTheme({fgclr:'white',bgclr:'black'}):setTheme({fgclr:'black',bgclr:'white'});
-        rootOfDoc.setProperty("--primary-fg-clr",`${theme.fgclr}`);
-        rootOfDoc.setProperty("--primary-bg-clr",`${theme.bgclr}`);
-    }
+    // const changeTheme = async () =>{
+    //     const rootOfDoc = document.documentElement.style
+    //     rootOfDoc.setProperty("--secondary-fg-clr",`${theme.fgclr}`);
+    //     rootOfDoc.setProperty("--secondary-bg-clr",`${theme.bgclr}`);
+    //     await theme.bgclr === 'white'?setTheme({fgclr:'white',bgclr:'black'}):setTheme({fgclr:'black',bgclr:'white'});
+    //     rootOfDoc.setProperty("--primary-fg-clr",`${theme.fgclr}`);
+    //     rootOfDoc.setProperty("--primary-bg-clr",`${theme.bgclr}`);
+    // }
     return (
         <Container >
             <BrandName href="#home">

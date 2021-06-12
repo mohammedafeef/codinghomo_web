@@ -9,7 +9,7 @@ function Project({tittle,content,imageUrl}) {
                     <p>{content}</p>
                 </ContentSection>
                 <ImageSection>
-                    <img src={imageUrl}/>
+                    <img src={imageUrl} alt={tittle}/>
                 </ImageSection>
 
             </Container>
