@@ -63,9 +63,9 @@ const Container = styled.div`
         width:100%;
         border-radius:0 0 1rem 1rem;
         padding:0; */}
-        box-shadow:0 3px 10px rgba(0,0,0,.2)
+        box-shadow:0 3px 10px rgba(0,0,0,.2);
         padding:0;
-        width:96%;
+        width:90%;
     }
 `
 const BrandName = styled.div`

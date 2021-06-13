@@ -8,11 +8,11 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 function Social() {
     return (
         <Container id="contact">
-            <FbIcon />
-            <InstaIcon style={{fontSize:"4rem"}}/>
-            <TwiIcon style={{fontSize:"4rem"}}/>
-            <GitIcon style={{fontSize:"4rem"}}/>
-            <LnIcon style={{fontSize:"4rem"}}/>
+            <a href="https://www.facebook.com/"><FbIcon /></a>
+            <a href="https://www.instagram.com/afeef._.maf/"><InstaIcon /></a>
+            <a href="https://twitter.com/?lang=en"><TwiIcon /></a>
+            <a href="https://github.com/MOHAMMEDAFEEF"><GitIcon /></a>
+            <a href="https://www.linkedin.com/in/mohammed-afeef-4407981ba/"><LnIcon /></a>
         </Container>
     )
 }
@@ -36,6 +36,9 @@ const Container = styled.div`
         animation:2s infinite alternate bouncing;
         box-shadow:0 8px 20px rgba(0,0,0,.18);
         background-image:linear-gradient(to right,#0b77bd,#00a3e4);
+    }
+    a{
+        z-index:3;
     }
     @keyframes bouncing{
         from{
