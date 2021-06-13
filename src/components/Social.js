@@ -49,6 +49,7 @@ const Container = styled.div`
         }
     }
     @media screen and (max-width:600px){
+        padding:3rem;
         ::before{
             left:-45rem;
         }
